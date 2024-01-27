@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@300&family=Roboto&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 100px 15px;
+    margin: 0 auto;
+
+
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #121212;
+    padding: 20px;
+    z-index: 3;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+    z-index: 2;
+}
+
+.nav-item:hover {
+    color: #FFC997;
+    transform: scale(1.1);
+}
+
+.nav-container {
+    float: right;
+}
+
+.main-section {
+    height: 100vh;
+    background: linear-gradient(#DB7E7E, #FFC997);
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    z-index: 2;
+}
+
+.main-content-bth {
+    display: block;
+    margin: 35px auto;
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0px #E06161;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(15, 14, 14);
+    font-size: 20px;
+    line-height: 80px;
+    transition: 2s;
+
+}
+
+.main-content-bth:hover {
+    transform: scale(1.1);
+    box-shadow: 14px 14px 0px #e96b6b;
+}
+
+.main-content-text {
+    font-size: 100px;
+    margin-top: 100px;
+    color: white;
+    text-shadow: 10px 10px 0px #E06161;
+    text-align: center;
+
+}
+
+.main-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle1 {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    z-index: 0;
+    animation-name: linerly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 3s;
+}
+
+.circle2 {
+    position: absolute;
+    top: 25px;
+    left: 1125px;
+    z-index: 0;
+    animation-name: linerly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 3s;
+}
+
+.circle3 {
+    position: absolute;
+    top: 280px;
+    left: -220px;
+    z-index: 0;
+    animation-name: linearly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 3s;
+}
+
+.circle-bordered {
+    position: absolute;
+    top: 610px;
+    left: 90px;
+    z-index: 0;
+    animation-name: linerly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 3s;
+}
+
+.circle-dashed-border {
+    position: absolute;
+    top: 450px;
+    right: -60px;
+    animation-name: rotate;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.triangle {
+    position: absolute;
+    z-index: 0;
+    left: 580px;
+    top: 140px;
+    animation-name: linerly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 3s;
+}
+
+.octagon {
+    position: absolute;
+    z-index: 0;
+    top: 550px;
+    left: 730px;
+    animation-name: linerly;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 3s;
+}
+
+@keyframes linerly {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.section-title {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.services-title {
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+
+.section-text {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.doing {
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+}
+
+.doing-left {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.doing-right {
+    display: inline-block;
+    width: 45%;
+
+}
+
+.doing-title {
+    margin-bottom: 30px;
+}
+
+.doing-text {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 10px 10px #E06161;
+}
+
+.doing-right img {
+    height: 100%;
+    margin: 50px 0 0 15px;
+}
+
+.yslygi {
+    background: linear-gradient(340.62deg, #FFFFFf 45.63%, #DB7F7E 45.64%);
+    text-align: center;
+
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.ysl3 {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-card {
+    display: inline-block;
+    border: 5px solid rgb(255, 201, 102);
+    border-radius: 30px;
+    width: 28%;
+    height: 500px;
+    margin: 10px 20px;
+    background-color: white;
+    padding: 15px;
+    vertical-align: top;
+
+}
+
+.zagolovok {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pc {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.line {
+    height: 3px;
+    width: 240px;
+    background-color: #E06161;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.text22 {
+    margin-top: 13px;
+}
+
+.advantages-card {
+    background-color: white;
+    max-width: 800px;
+    z-index: 2;
+    position: absolute;
+}
+
+.advantages-list {
+    list-style-type: circle;
+    background-color: whitesmoke;
+    border: 5px solid rgb(254, 200, 100);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 15px;
+    width: 640px;
+    height: 180px;
+    box-shadow: 7px 7px 0px rgb(186, 29, 81);
+    margin-left: 160px;
+}
+
+.main-text {
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.z2 {
+    font-weight: 900px;
+    margin-left: 10px;
+    font-size: 27px;
+}
+
+.advantages-text {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.l2 {
+    margin-left: 490px;
+}
+
+.advantages-bg {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.advantages-circle {
+    position: absolute;
+    top: 415%;
+    right: 0px;
+}
+
+.advantages-hexagon {
+    position: absolute;
+    top: 360%;
+    left: -160px;
+
+
+}
+
+.andvantages-content {
+    position: relative;
+    z-index: 3;
+}
+
+.portfolio-table {
+    width: 100%;
+    height: 600px;
+}
+.portfolio{
+    margin-top: 35%;
+}
+.cell1 {
+    background: url(C:/Users/DaviD/Desktop/питон/сайты/lesson7/Artem/img/portfolio/site1.png) center/cover no-repeat;
+
+}
+
+.cell2 {
+    background: url(C:/Users/DaviD/Desktop/питон/сайты/lesson7/Artem/img/portfolio/site2.png) center/cover no-repeat;
+}
+
+.cell3 {
+    background: url(C:/Users/DaviD/Desktop/питон/сайты/lesson7/Artem/img/portfolio/site3.png) center/cover no-repeat;
+}
+
+.cell4 {
+    background: url(C:/Users/DaviD/Desktop/питон/сайты/lesson7/Artem/img/portfolio/site4.png) center/cover no-repeat;
+}
+
+.portfolio-cell {
+    border: 5px solid #E06161;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.portfolio-cell:hover {
+    transform: scale(0.94);
+}
+
+.section-title {
+    font-family: Noto Sans;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.end {
+    background: linear-gradient(#ff70b5, #f9d56a);
+    height: 260px;
+    text-align: center;
+}
+
+.call-us {
+    padding-top: 50px;
+    font-family: Noto Sans;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(19, 19, 19);
+    text-shadow: 2px 3px 0px #E06161;
+}
+
+.button {
+    background-color: white;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    margin-left: 610px;
+    margin-top: 12px;
+    position: absolute;
+    transition: 1s;
+    box-shadow: 5px 6px 0px #E06161;
+}
+
+.text3 {
+    padding: 15px;
+    font-weight: 900;
+}
+
+.button:hover {
+    transform: scale(1.07);
+    box-shadow: 6px 8px 1px #e06565;
+
+}
+
+.about-text {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@media (max-width:767px) {
+    .nav-menu {
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+    }
+
+    .nav-logo {
+        width: 105px;
+        margin-left: 19%;
+        margin-top: -1%;
+        padding-bottom: 2%;
+    }
+
+    .nav-item {
+        color: #121212;
+        font-weight: 700;
+    }
+
+    .nav-container {
+        margin-top: -10%;
+        display: inline-block;
+    }
+
+    .section-title {
+        font-size: 33px;
+        margin-top: 5%;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .main-content-text {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .main-content-bth {
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 15px;
+    }
+
+    .circle-dashed-border {
+        top: 19%;
+        left: 65%;
+    }
+
+    .doing-left {
+        display: block;
+        width: 100%;
+    }
+
+    .doing-right {
+        display: block;
+        width: 100%;
+    }
+
+    .doing-right img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .doing-text {
+        box-shadow: 0px 15px 0px #E06161;
+    }
+
+    .advantages-list {
+        height: fit-content;
+        width: fit-content;
+        margin: 8%;
+        margin-left: 3%;
+    }
+
+    .advantages-text {
+        width: 100%;
+    }
+
+    .button {
+        margin-left: 21%;
+    }
+
+    .yslygi {
+        width: 100%;
+        
+    }
+    .line{
+        width: 50%
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    * {
+        width: 100%;
+
+    }
+    .services-card{
+        width: 90%;
+    }
+    .portfolio{
+        margin-top: 110%;
+        margin-left: 4%;
+    }
+    .cell1{
+        width: 50%;
+    }
+    .cell2{
+        width: 50%;
+    }
+    .cell3{
+        width: 50%;
+    }
+    .cell4{
+        width: 50%;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .dop1{
+        margin-left: -8%;
+    }
+    .dop2{
+        margin-left: 44%;
+        margin-top: -22%;
+    }
+}
